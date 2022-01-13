@@ -1,0 +1,12 @@
+<form [formGroup]="cronacont" (ngSubmit)="send()">
+  <label for="emailtext" >   Email</label>
+  <input formControlName ="name" type="text" name="Email" id="emailtext" placeholder="Your Email">
+  <br >
+  <label for="passwordtext" >Password</label>
+
+  <input formControlName ="serial" type="text" name="Password" id="passwordtext" placeholder="Your Password">
+  <br >
+  <button type="submit"[disabled]="cronacont.invalid">Send</button>
+
+</form>
+
